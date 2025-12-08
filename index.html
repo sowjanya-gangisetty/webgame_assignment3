@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Word Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fredoka:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="webgame.js" defer></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Mystery Word Game</h1>
+
+        <div class="category-select">
+            <select id="categorySelect">
+                <option value="animals">Animals</option>
+                <option value="fruits">Fruits</option>
+                <option value="colors">Colors</option>
+            </select>
+            <button class="startBtn" onclick="startGame()">Start Game</button>
+        </div>
+
+        <div class="category" id="category"></div>
+        <div class="word-display" id="wordDisplay"></div>
+
+        <div class="stats">Tries left: <span id="tries">10</span></div>
+
+        <div class="keyboard" id="keyboard"></div>
+
+        <div class="message" id="message"></div>
+
+        <button class="restart-btn" id="restartBtn">Play Again</button>
+
+        <div class="score-history">
+            <h3>Score History</h3>
+            <div id="scoreList"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
